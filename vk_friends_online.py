@@ -1,3 +1,4 @@
+import getpass
 import vk
 
 
@@ -9,7 +10,7 @@ def get_user_login():
 
 
 def get_user_password():
-    return(input("Введите пароль:\n"))
+    return(getpass.getpass("Введите пароль:\n"))
 
 
 def get_online_friends(login, password):
@@ -26,8 +27,8 @@ def get_online_friends(login, password):
 
 def output_friends_to_console(friends_online):
     for friend_online in friends_online:
-        print("{name} {last_name}".format(name=friend_online["first_name"],
-                                          last_name=friend_online["last_name"]))
+        print("{first_name} {last_name}".format(first_name=friend_online["first_name"],
+                                                last_name=friend_online["last_name"]))
 
 
 if __name__ == '__main__':
