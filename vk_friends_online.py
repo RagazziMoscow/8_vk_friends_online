@@ -36,4 +36,4 @@ if __name__ == '__main__':
     password = get_user_password()
     friends_online = get_online_friends(login, password)
     print("\n\nДрузья онлайн:\n")
-output_friends_to_console(friends_online)
+    output_friends_to_console(friends_online)
